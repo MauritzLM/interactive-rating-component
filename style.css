@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+    color: hsl(217, 12%, 63%);
+}
+
+section {
+    background-color: hsl(213, 19%, 18%);
+    width: 340px;
+    color: hsl(0, 0%, 100%);
+    padding: 2em;
+    border-radius: 1.5em;
+}
+
+.rating {
+    margin-bottom: 2em;
+}
+
+.rating-select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating-select span {
+    padding: .6em 1em;
+    border-radius: 2em;
+    background-color: hsl(217, 12%, 63%);
+}
+
+.rating button {
+    width: 100%;
+    font-family: inherit;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 2em;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
