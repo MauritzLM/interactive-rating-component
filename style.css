@@ -9,6 +9,12 @@ html {
 
 body {
     background-color: hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4em;
+    height: 100vh;
 }
 
 h1 {
@@ -18,32 +24,94 @@ h1 {
 p {
     font-size: 1.5rem;
     color: hsl(217, 12%, 63%);
+    margin-top: 1.6em;
+    margin-bottom: 1.5em;
+    line-height: 1.5;
 }
 
 section {
     background-color: hsl(213, 19%, 18%);
     width: 340px;
     color: hsl(0, 0%, 100%);
-    padding: 2em;
+    padding: 2.7em 2.2em;
     border-radius: 1.5em;
 }
 
-.rating {
+.rating-state {
     margin-bottom: 2em;
 }
 
-.rating-select {
+.star-img {
+    background-color: hsla(216, 12%, 54%, 0.137);
+    background-image: url(./images/icon-star.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    height: 4.2em;
+    width: 4.2em;
+}
+
+form div {
     display: flex;
     justify-content: space-between;
 }
 
-.rating-select span {
-    padding: .6em 1em;
-    border-radius: 2em;
-    background-color: hsl(217, 12%, 63%);
+.choose-rating label {
+    position: relative;
+    top: 1em;
+    right: 1.9em;
+    font-size: 1.5rem;
+    text-align: center;
+    color: hsl(217, 12%, 63%);
 }
 
-.rating button {
+
+input[type="radio"] {
+    /* reset browser styles */
+    appearance: none;
+    display: grid;
+    place-content: center;
+    width: 4.2em;
+    height: 4.2em;
+    background-color: hsla(216, 12%, 54%, 0.137);
+    border-radius: 50%;
+    font: inherit;
+
+}
+
+input[type="radio"]::before {
+    display: block;
+    content: "";
+    width: 4.2em;
+    height: 4.2em;
+    border-radius: 50%;
+    background-color: hsl(216, 12%, 54%);
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+input[type="radio"]:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+
+input[type="radio"]:checked+label,
+input[type="radio"]:hover+label {
+    color: hsl(0, 0%, 100%);
+}
+
+/* .rating-select span {
+    padding: .8em 1.2em .6em 1.2em;
+    border-radius: 2em;
+    background-color: hsla(217, 12%, 63%, 0.103);
+    text-align: center;
+}  */
+
+form button {
     width: 100%;
     font-family: inherit;
     background-color: hsl(25, 97%, 53%);
@@ -53,6 +121,8 @@ section {
     padding: 1em 2em;
     text-transform: uppercase;
     letter-spacing: .2em;
+    margin-top: 2em;
+    /* font-weight: 700; */
 }
 
 .attribution {
