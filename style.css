@@ -55,17 +55,42 @@ section {
 form {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     width: 100%;
+    position: relative;
+    flex-wrap: wrap;
 }
 
 form label {
-    position: relative;
-    top: .9em;
-    right: 2em;
+    position: absolute;
+    top: 0;
     font-size: 1.5rem;
     text-align: center;
     color: hsl(217, 12%, 63%);
+}
+
+label[for="rating1"] {
+    top: .9em;
+    left: 1.2em;
+}
+
+label[for="rating2"] {
+    top: .9em;
+    left: 5.35em;
+}
+
+label[for="rating3"] {
+    top: .9em;
+    left: 9.6em;
+}
+
+label[for="rating4"] {
+    top: .9em;
+    right: 5.35em;
+}
+
+label[for="rating5"] {
+    top: .9em;
+    right: 1.05em;
 }
 
 
