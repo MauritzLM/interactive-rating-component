@@ -17,9 +17,22 @@ body {
     height: 100vh;
 }
 
+main {
+    position: relative;
+    /* height: 600px;
+    width: 100%; */
+}
+
 h1 {
     font-size: 2.5rem;
     margin-bottom: .5em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    margin-top: .2em;
 }
 
 p {
@@ -30,16 +43,37 @@ p {
     line-height: 1.5;
 }
 
+.info-message {
+    text-align: center;
+    color: hsl(25, 97%, 53%);
+    background-color: hsla(216, 12%, 54%, 0.137);
+    border-radius: 2em;
+    width: 60%;
+    padding: .5em .4em .3em .4em;
+    line-height: 1.4;
+    margin-top: 1.6em;
+}
+
+h2+p {
+    text-align: center;
+    margin-top: .7em;
+}
+
 section {
     background-color: hsl(213, 19%, 18%);
     width: 340px;
     color: hsl(0, 0%, 100%);
     padding: 2.7em 2.2em;
     border-radius: 1.5em;
+    position: relative;
+    /* top: 5em;
+    left: 10vw; */
 }
 
 .rating-state {
-    margin-bottom: 2em;
+    margin-bottom: 4em;
+    /* z-index: 1;
+    top: 10em; */
 }
 
 .star-img {
@@ -66,6 +100,7 @@ form label {
     font-size: 1.5rem;
     text-align: center;
     color: hsl(217, 12%, 63%);
+    cursor: pointer;
 }
 
 label[for="rating1"] {
@@ -105,6 +140,7 @@ input[type="radio"] {
     border-radius: 50%;
     font: inherit;
     margin: 0;
+    cursor: pointer;
 }
 
 input[type="radio"]::before {
@@ -150,7 +186,29 @@ form button {
     text-transform: uppercase;
     letter-spacing: .2em;
     margin-top: 2em;
+    cursor: pointer;
     /* font-weight: 700; */
+}
+
+/* .thank-you-state {
+    bottom: 24em;
+} */
+img {
+    display: block;
+}
+
+.thank-you-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 1em;
+    padding-top: 3.1em;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
 }
 
 .not-visible {

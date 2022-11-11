@@ -16,14 +16,14 @@
         e.preventDefault();
         for (let i = 0; i < radioButtons.length; i++) {
             if (radioButtons[i].checked) {
-                infoMessage.textContent = `You selected ${radioButtons[i].value} of 5`;
+                infoMessage.textContent = `You selected ${radioButtons[i].value} out of 5`;
             }
 
         }
 
         // toggle visibility class
-        // ratingSection.classList.add('not-visible');
-        // thankYouSection.classList.remove('not-visible');
+        ratingSection.classList.add('not-visible');
+        thankYouSection.classList.remove('not-visible');
 
     })
 })()
