@@ -1,10 +1,4 @@
-
-// select form
-// select section 1
-// select section 2
-// select message paragraph
-// select radio buttons
-
+// on form submit
 (function () {
     const form = document.querySelector('form');
     const ratingSection = document.querySelector('.rating-state');
@@ -12,6 +6,7 @@
     const infoMessage = document.querySelector('.info-message');
     const radioButtons = document.querySelectorAll('input[name="rating"]');
 
+    // get value of checked radio button and update info message text content
     form.addEventListener('submit', (e) => {
         e.preventDefault();
         for (let i = 0; i < radioButtons.length; i++) {

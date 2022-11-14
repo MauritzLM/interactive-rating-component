@@ -27,9 +27,10 @@ Users should be able to:
 - See the "Thank you" card state after submitting a rating
 
 ### Screenshot
-
-![mobile](./images/screenshot-mobile.png)
-![desktop](./images/screenshot-desktop.png)
+![mobile1](./images/screenshot-mobile1.png)
+![mobile2](./images/screenshot-mobile2.png)
+![desktop1](./images/screenshot-dekstop1.png)
+![desktop2](./images/screenshot-desktop2.png)
 
 ### Links
 
@@ -44,39 +45,40 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- javascript
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+Building the rating system with radio buttons was really fun to learn.
 
-To see how you can add code snippets, see below:
+Using appearance: none to reset default browser styles.
 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+form input {
+  appearance: none;
 }
 ```
+Using display grid on the radio button to center align :before content: 
 
-1. using radio buttons to create a rating section - fun to build, creating custom radio buttons and getting the numbers(labels) aligned
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
+```css
+input[type="radio"] {
+  display: grid;
+  place-content: center;
+}
+```
 ### Continued development
 
-1. I want to keep getting better with css and learning how to solve various problems with css.
+1. I want to keep getting better with css and learning how to solve various problems with it.
 2. I also want to keep learning about best practices for css and html.
 
 ### Useful resources
-
-1. modern css solutions
-2. https://dev.to/grahamthedev/5-star-rating-system-actually-accessible-no-js-no-wai-aria-3idl - some inspiration
 
 - [modern css solutions article](https://moderncss.dev/pure-css-custom-styled-radio-buttons/) - This article taught me how to create custom radio buttons.
 - [rating-system with radio buttons](https://dev.to/grahamthedev/5-star-rating-system-actually-accessible-no-js-no-wai-aria-3idl) - This article showed me that one can create a custom rating system using radio buttons.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@MauritzLM](https://www.frontendmentor.io/profile/MauritzLM)
 
 
 

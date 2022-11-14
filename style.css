@@ -27,6 +27,7 @@ main {
 h1 {
     font-size: 2.5rem;
     margin-bottom: .5em;
+    letter-spacing: .02em;
 }
 
 h2 {
@@ -34,6 +35,7 @@ h2 {
     font-size: 2.5rem;
     margin-bottom: 0;
     margin-top: .2em;
+    letter-spacing: .02em;
 }
 
 p {
@@ -208,6 +210,7 @@ button:hover {
 footer {
     font-size: 11px;
     text-align: center;
+    color: hsl(0, 0%, 100%);
 }
 
 footer a {
