@@ -1,3 +1,4 @@
+/* General styles */
 * {
     box-sizing: border-box;
 }
@@ -19,9 +20,9 @@ body {
 
 main {
     position: relative;
-    /* height: 600px;
-    width: 100%; */
 }
+
+/* Typography */
 
 h1 {
     font-size: 2.5rem;
@@ -38,7 +39,6 @@ h2 {
 p {
     font-size: 1.5rem;
     color: hsl(217, 12%, 63%);
-    /* margin-top: 1.4em; */
     margin-bottom: 1.5em;
     line-height: 1.5;
 }
@@ -59,6 +59,8 @@ h2+p {
     margin-top: .7em;
     margin-bottom: 1.9em;
 }
+
+/* Rating section */
 
 section {
     background-color: hsl(213, 19%, 18%);
@@ -123,7 +125,7 @@ label[for="rating5"] {
     right: 1.05em;
 }
 
-
+/* Radio buttons */
 input[type="radio"] {
     /* reset browser styles */
     appearance: none;
@@ -177,14 +179,13 @@ form button {
     margin-bottom: .5em;
     cursor: pointer;
     text-align: center;
-    /* font-weight: 700; */
 }
-
 
 img {
     display: block;
 }
 
+/* Thank you section */
 .thank-you-state {
     display: flex;
     flex-direction: column;
@@ -199,6 +200,7 @@ button:hover {
     color: hsl(25, 97%, 53%);
 }
 
+/* toggle visibility */
 .not-visible {
     display: none;
 }
