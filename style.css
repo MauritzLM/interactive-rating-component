@@ -170,13 +170,14 @@ input[type="radio"]:hover+label {
 form button {
     width: 100%;
     font-family: inherit;
+    font-size: 1.5rem;
     background-color: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
     border: none;
     border-radius: 2em;
-    padding: 1.2em 2em 1em 2em;
+    padding: 1em 2em .8em 2em;
     text-transform: uppercase;
-    letter-spacing: .15em;
+    letter-spacing: .11em;
     margin-top: 1.9em;
     margin-bottom: .5em;
     cursor: pointer;
@@ -279,4 +280,5 @@ footer a {
         margin-top: 2em;
         margin-bottom: 1.6em;
     }
+
 }
